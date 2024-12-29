@@ -18,17 +18,26 @@ function RoutesConfig() {
   const [showHomepage, setShowHomepage] = useState(1); 
   const videoRef = useRef(null); 
 
-
   useEffect(() => {
     if (showHomepage === 2 && videoRef.current) {
       videoRef.current.play();
     }
-  }, [showHomepage]); 
+  }, [showHomepage]);
+
+  useEffect(() => {
+    if (showHomepage === 2) {
+      const timer = setTimeout(() => setShowHomepage(3), 10000); 
+      return () => clearTimeout(timer); 
+    }
+  }, [showHomepage]);
 
   const handleDivClick = () => {
     setShowHomepage(2); 
   };
 
+  const handleSkip = () => {
+    setShowHomepage(3); 
+  };
 
   const videoSource = "/src/assets/customIllustration/uni1033.mp4";
 
@@ -37,7 +46,7 @@ function RoutesConfig() {
       {showHomepage === 1 ? (
         <Intro handleClick={handleDivClick} /> 
       ) : showHomepage === 2 ? (
-        <>
+        <div style={{ position: "relative", width: "100vw", height: "100vh", backgroundColor: "#000" }}>
           <video
             ref={videoRef}
             style={{
@@ -45,16 +54,32 @@ function RoutesConfig() {
               margin: "0 auto",
               width: "100%",
               height: "100%",
+              objectFit: "cover",
+              zIndex: 10,
             }}
             src={videoSource}
+            crossOrigin="anonymous"
+            playsInline
+            autoPlay
             onError={(e) => console.error("Video Error:", e)} 
             onLoadedData={() => console.log("Video loaded successfully")} 
           >
             Your browser does not support the video tag.
           </video>
-
-          {setTimeout(() => setShowHomepage(3), 10000)} 
-        </>
+          <button className='mt-8 border-2  text-xl italic border-rose-500 text-white font-crossFly rounded-tl-3xl rounded-br-3xl hover:bg-rose-500 hover:rounded-lg hover:scale-[.97] transition-all ease-in-out backdrop-blur-lg duration-75'  
+            onClick={handleSkip}
+            style={{
+              position: "absolute",
+              bottom: "20px",
+              right: "20px",
+              padding: "10px 20px",   
+              fontSize: "16px",
+              zIndex: 1000,
+            }}
+          >
+            Skip
+          </button>
+        </div>
       ) : (
         <>
           <Header />
