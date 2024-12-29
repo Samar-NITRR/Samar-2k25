@@ -25,25 +25,27 @@ const MemberForm = ({ value, setValue, count, enabled = false }) => {
     <>
       {Array.from({ length: count }, (_, index) => (
         <div key={index}>
-          <h3>{`Team Member ${index + 2}`}</h3>
+          <h3 className="form-que">{`Team Member ${index + 2}`}</h3>
           <div className="flex flex-col space-y-3">
             <input
               type="text"
               placeholder="Name"
               value={value[index]?.name || ""}
               onChange={(e) => handleInputChange(index, "name", e.target.value)}
-              className="w-full p-2 border border-gray-300 rounded-lg"
+              className="form-input"
               disabled={!enabled}
               required={true}
             />
             <input
               type="number"
-              placeholder="Year"
+              placeholder="Graduation Year"
               value={value[index]?.year || ""}
               onChange={(e) => handleInputChange(index, "year", e.target.value)}
-              className="w-full p-2 border border-gray-300 rounded-lg"
+              className="form-input"
               disabled={!enabled}
               required={true}
+              max="2028"
+              min={new Date().getFullYear()}
             />
           </div>
         </div>

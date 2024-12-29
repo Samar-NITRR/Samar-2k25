@@ -30,7 +30,7 @@ function RoutesConfig() {
   };
 
 
-  const videoSource = "./src/assets/customIllustration/uni1033.mp4";
+  const videoSource = "/src/assets/customIllustration/uni1033.mp4";
 
   return (
     <Router>

@@ -24,47 +24,48 @@ const CollegeForm = ({ value, setValue }) => {
   };
 
   return (
-    <div className="text-gray-200">
-      <h3>Select Your College</h3>
-      <div className="flex flex-col gap-2">
-        <label className="block mb-2 text-sm font-medium">
+    <>
+      <h3 className="form-que">Your College</h3>
+      <div className="form-opt-cont">
+        <label className="form-radio">
           <input
             type="radio"
             name="college"
             value="NIT Raipur"
             checked={selectedOpt == 0}
             onChange={handleOptionChange}
+            className="form-radio-input"
+            required={true}
           />
           NIT Raipur
         </label>
-        <label className="block mb-2 text-sm font-medium">
+        <label className="form-radio">
           <input
             type="radio"
             name="college"
             value="Other"
-            className="mg"
+            className="form-radio-input"
             checked={selectedOpt == 1}
             onChange={handleOptionChange}
+            required={true}
           />
           Other
         </label>
       </div>
       {selectedOpt == 1 && (
         <div>
-          <label className="block mb-2 text-sm font-medium">
-            Enter College Name:
-            <input
-              type="text"
-              value={value}
-              onChange={handleInputChange}
-              placeholder="Enter your college"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-              required
-            />
-          </label>
+          <h3 className="form-que">Enter College Name:</h3>
+          <input
+            type="text"
+            value={value}
+            onChange={handleInputChange}
+            placeholder="Enter your college"
+            className="form-input"
+            required
+          />
         </div>
       )}
-    </div>
+    </>
   );
 };
 

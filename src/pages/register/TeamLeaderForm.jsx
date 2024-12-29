@@ -1,9 +1,13 @@
 import React from "react";
 
-const TeamLeaderForm = ({leaderDetails, setLeaderDetails, enabled=false}) => {
+const TeamLeaderForm = ({
+  leaderDetails,
+  setLeaderDetails,
+  enabled = false,
+}) => {
   return (
     <div>
-      <h3>Team Leader</h3>
+      <h3 className="form-que">Team Leader</h3>
       <div className="flex flex-col space-y-3">
         <input
           type="text"
@@ -15,29 +19,32 @@ const TeamLeaderForm = ({leaderDetails, setLeaderDetails, enabled=false}) => {
               name: e.target.value,
             }))
           }
-          className="w-full p-2 border border-gray-300 rounded-lg"
+          className="form-input"
           required={true}
           disabled={!enabled}
         />
         <input
           type="number"
-          placeholder="Year"
+          placeholder="Graduation Year"
           value={leaderDetails.year || ""}
           onChange={(e) =>
             setLeaderDetails((prev) => ({ ...prev, year: e.target.value }))
           }
-          className="w-full p-2 border border-gray-300 rounded-lg"
+          className="form-input"
+          max="2028"
+          min={new Date().getFullYear()}
           required={true}
           disabled={!enabled}
         />
         <input
-          type="text"
+          type="tel"
           placeholder="Whatsapp No."
           value={leaderDetails.phone || ""}
           onChange={(e) =>
             setLeaderDetails((prev) => ({ ...prev, phone: e.target.value }))
           }
-          className="w-full p-2 border border-gray-300 rounded-lg"
+          pattern="[0-9]{10}"
+          className="form-input"
           required={true}
           disabled={!enabled}
         />
@@ -48,7 +55,7 @@ const TeamLeaderForm = ({leaderDetails, setLeaderDetails, enabled=false}) => {
           onChange={(e) =>
             setLeaderDetails((prev) => ({ ...prev, email: e.target.value }))
           }
-          className="w-full p-2 border border-gray-300 rounded-lg"
+          className="form-input"
           required={true}
           disabled={!enabled}
         />
