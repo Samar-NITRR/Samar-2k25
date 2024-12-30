@@ -2,8 +2,8 @@ import React from "react";
 
 const InputForm = ({ ques, value, setValue, enabled = false }) => {
   return (
-    <div className="my-2">
-      <h3>{ques}</h3>
+    <>
+      <h3 className="form-que">{ques}</h3>
       <input
         type="text"
         value={value || ""}
@@ -11,11 +11,11 @@ const InputForm = ({ ques, value, setValue, enabled = false }) => {
         onChange={(e) => {
           setValue(e.target.value);
         }}
-        className="w-full p-2 border border-gray-300 rounded-lg"
+        className="form-input"
         required={true}
         disabled={!enabled}
       />
-    </div>
+    </>
   );
 };
 

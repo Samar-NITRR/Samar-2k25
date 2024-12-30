@@ -22,7 +22,7 @@ function Register() {
                 }}
               >
                 <img
-                  className="object-cover h-[200px] object-center w-full"
+                  className="object-center w-full h-[150px]"
                   src={sport.image}
                   alt=""
                 />

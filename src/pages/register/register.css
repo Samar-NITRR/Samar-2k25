@@ -1,19 +1,77 @@
-.sport-cont{
+/* @keyframes shadow-anim {
+  0% {
+    box-shadow: 2px 5px 10px black;
+  }
+  50% {
+    box-shadow: 2px 5px 10px rgb(123, 29, 106), -2px 5px 10px rgb(123, 29, 106),
+    2px -5px 10px rgb(123, 29, 106), -2px -5px 10px rgb(123, 29, 106);
+  }
+  100% {
+    box-shadow: 2px 5px 10px black;
+  }
+} */
+
+.sport-cont {
   /* w-[300px] backdrop-blur-[5px] rounded-2xl border border-black overflow-hidden */
   width: 300px;
-  backdrop-filter: blur(5px);
+  box-shadow: 2px 5px 10px black;
+  /* border: solid black 1px; */
   border-radius: 10px;
-  border: solid black 1px;
+  backdrop-filter: blur(8px);
   overflow: hidden;
   transform: scale(1);
-  transition: transform .3s;
+  transition: transform 0.3s;
   cursor: pointer;
+  /* animation: shadow-anim 6s infinite; */
 }
 
-.sport-cont:hover{
+.sport-cont h3 {
+  font-family: "VerminVibes";
+  color: white;
+}
+.sport-cont p {
+  color: white;
+  font-family: "KnightWarrior";
+}
+
+.sport-cont:hover {
   transform: scale(1.1);
 }
 
-.sport-cont:active{
+.sport-cont:active {
   transform: scale(1.05);
+}
+
+
+.form-input{
+  /* w-full p-2 border border-gray-300 rounded-lg */
+  width: 100%;
+  padding: 8px;
+  border: 1px solid rgb(209 213 219);
+  border-radius: 8px;
+  background-color: transparent;
+  outline: none;
+  margin-bottom: 8px;
+  color: white;
+}
+.form-radio{
+  /* block mb-2 text-sm font-medium */
+  display: block;
+  margin-bottom: 8px;
+  color: white;
+  cursor: pointer;
+}
+.form-radio-input{
+  cursor: pointer;
+  margin-right: 5px;
+}
+.form-label{
+  color: black;
+}
+.form-que{
+  color: rgb(245 158 11);
+  font-size: 1.5rem;
+  font-family: 'Brave81';
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
