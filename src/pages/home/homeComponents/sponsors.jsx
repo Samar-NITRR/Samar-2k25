@@ -14,7 +14,7 @@ import '../homeComponents/sponsors.css';
 function Sponsors() {
   return (
     <div className="Sponsors">
-        <h1 className="font-crossFly text-4xl"> Our <span className="text-4xl italic text-rose-500 font-crossFly  glow-text mb-8 "> Past Sponsors </span> </h1>
+        <h1 className="font-crossFly text-4xl drop-shadow-[3px_3px_0px_#000]"> Our <span className="text-4xl italic text-rose-500 font-crossFly  glow-text mb-8 "> Past Sponsors </span> </h1>
 
        <div className="underline-glow"></div>
 

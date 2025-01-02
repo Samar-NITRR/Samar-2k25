@@ -25,7 +25,6 @@ function Header() {
                 <NavLink className='font-vermin text-3xl text-white cursor-pointer' to="/">SAMAR</NavLink>
             </div>
 
-            {/* Hamburger Button */}
             <button
                 className='xl:hidden flex flex-col justify-center items-center gap-1 focus:outline-none'
                 onClick={toggleMenu}
@@ -35,35 +34,26 @@ function Header() {
                 <div className='w-6 h-0.5 bg-white'></div>
             </button>
 
-            {/* Navigation Menu */}
             <div
                 className={`absolute top-[80px] left-0 w-full bg-slate-800 bg-opacity-90 xl:bg-transparent xl:static xl:flex xl:items-center xl:w-auto transition-transform duration-300 ${
                     isMenuOpen ? 'flex flex-col items-center' : 'hidden xl:flex'
                 }`}
             >
-                <NavLink
-                    to="/"
-                    className={({ isActive }) =>
-                        `px-8 py-3 hover:text-rose-400 font-crossFly text-xs tracking-widest ${
-                            isActive ? 'text-rose-400' : 'text-white'
-                        }`
-                    }
+                <a
+                    href="/"
+                    className='px-8 py-3 text-white hover:text-rose-400 font-crossFly text-xs tracking-widest'
                     onMouseEnter={handleHover}
                 >
                     HOME
-                </NavLink>
+                </a>
 
-                <NavLink
-                    to="/about"
-                    className={({ isActive }) =>
-                        `px-8 py-3 hover:text-rose-400 font-crossFly text-xs tracking-widest ${
-                            isActive ? 'text-rose-400' : 'text-white'
-                        }`
-                    }
+                <a
+                    href="#about"
+                    className='px-8 py-3 text-white hover:text-rose-400 font-crossFly text-xs tracking-widest'
                     onMouseEnter={handleHover}
                 >
                     ABOUT
-                </NavLink>
+                </a>
 
                 <NavLink
                     to="/merchandise"
@@ -76,29 +66,13 @@ function Header() {
                 >
                     MERCHANDISE
                 </NavLink>
-                <NavLink
-                    to="/team"
-                    className={({ isActive }) =>
-                        `px-8 py-3 hover:text-rose-400 font-crossFly text-xs tracking-widest ${
-                            isActive ? 'text-rose-400' : 'text-white'
-                        }`
-                    }
-                    onMouseEnter={handleHover}
-                >
-                    TEAM
-                </NavLink>
 
-                <NavLink
-                    to="/contact"
-                    className={({ isActive }) =>
-                        `px-8 py-3 hover:text-rose-400 font-crossFly text-xs tracking-widest ${
-                            isActive ? 'text-rose-400' : 'text-white'
-                        }`
-                    }
-                    onMouseEnter={handleHover}
-                >
+                <a 
+                    href="#contactus" 
+                    className='px-8 py-3 text-white hover:text-rose-400 font-crossFly text-xs tracking-widest'
+                    onMouseEnter={handleHover} >
                     CONTACT US
-                </NavLink>
+                </a>
             </div>
 
             <button className='hidden md:block border-2 px-8 py-3 border-rose-200 bg-rose-500 text-white italic font-crossFly rounded-tl-3xl rounded-br-3xl hover:rounded-lg hover:text-white hover:scale-[.97] transition-all ease-in-out duration-75' onMouseEnter={handleHover}>

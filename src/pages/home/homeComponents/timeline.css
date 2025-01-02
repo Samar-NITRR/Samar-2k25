@@ -9,25 +9,15 @@
 }
 
 :root {
-
     --background-color: #112e42;
-
     --main-color:       #00abf0;
-
     --htm-color:        #f43f5e;
-
     --javascript-color: #fdd535;
-
     --reactjs-color:    #00d8ff;
-
     --nodejs-color:     #6caa48;
-
     --expressjs-color:  #01041d;
-
     --mongodb-color:    #599636;
-
     --php-color:        #484c89;
-
 }
 
 body {
@@ -41,7 +31,6 @@ body {
     text-align: center;
 }
 
-
 .timeline {
     position: relative;
     max-width: 1200px;
@@ -49,12 +38,36 @@ body {
     margin-top: 60px;
 }
 
+/* Timeline line centered */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: var(--htm-color);
+    top: 0;
+    left: 50%; /* Ensures the timeline line is centered */
+    margin-left: -3px; /* Adjust for center alignment */
+    z-index: -1;
+    animation: moveline 6s linear forwards;
+}
+
+@keyframes moveline {
+
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
 .container {
     padding: 10px 50px;
     position: relative;
     width: 50%;
     animation: movedown 1s linear forwards;
-    
     opacity: 0;
 }
 
@@ -72,7 +85,6 @@ body {
 
 }
 
-/* Add the keyframes for the rotation */
 @keyframes rotateCard {
     0% {
         transform: rotateY(0deg);
@@ -82,28 +94,38 @@ body {
     }
 }
 
-/* Trigger the rotation animation */
 .text-box.rotate {
     animation: rotateCard 1s ease;
     will-change: transform;
 }
 
+.container:nth-child(1) {
+    animation-delay: 0s;
+}
 
+.container:nth-child(2) {
+    animation-delay: 1s;
+}
 
-.container:nth-child(1) {   animation-delay: 0s ;   }
-    
-.container:nth-child(2) {   animation-delay: 1s ;   }
+.container:nth-child(3) {
+    animation-delay: 2s;
+}
 
-.container:nth-child(3) {   animation-delay: 2s ;   }
+.container:nth-child(4) {
+    animation-delay: 3s;
+}
 
-.container:nth-child(4) {   animation-delay: 3s ;   }
+.container:nth-child(5) {
+    animation-delay: 4s;
+}
 
-.container:nth-child(5) {   animation-delay: 4s ;   }
+.container:nth-child(6) {
+    animation-delay: 5s;
+}
 
-.container:nth-child(6) {   animation-delay: 5s ;   }
-
-.container:nth-child(7) {   animation-delay: 6s ;   }
-
+.container:nth-child(7) {
+    animation-delay: 6s;
+}
 
 .text-box {
     padding: 20px 30px;
@@ -113,8 +135,8 @@ body {
     font-size: 15px;
     background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
     border-radius: 20px; /* Rounded corners */
-    backdrop-filter: blur(10px); /* Blur effect */
-    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    backdrop-filter: blur(25px); /* Blur effect */
+    -webkit-backdrop-filter: blur(25px); /* For Safari */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
@@ -125,21 +147,64 @@ body {
     background: rgba(255, 255, 255, 0.2); /* Lighten the background */
 }
 
+/* Arrow adjustments */
 .left-container-arrow:hover,
 .right-container-arrow:hover {
     transform: scale(1.1); /* Slightly enlarge the arrow */
     transition: transform 0.3s ease; /* Smooth transition */
 }
 
-.htmltext {
+/* Adjust image and arrow position */
+.container img {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid var(--htm-color);
+    background: black;
+    right: -35px; /* Half the width of the image to center it */
+    top: 32px;
+    z-index: 10;
+}
 
+.right-container img {
+    left: -35px; /* Same logic for right side to center */
+}
+
+/* Position containers */
+.left-container {
+    left: 0;
+}
+
+.right-container {
+    left: 50%;
+}
+
+/* Arrows */
+.left-container-arrow {
+    position: absolute;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #ffffff transparent transparent;
+    right: -35px; /* Adjusted to align with the centered image */
+    top: 32px;
+}
+
+.right-container-arrow {
+    position: absolute;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #ffffff;
+    left: -35px; /* Adjusted to align with the centered image */
+    top: 32px;
+}
+
+/* Card types */
+.htmltext {
     color: var(--javascript-color);
 }
 
 .javascripttext {
     color: var(--javascript-color);
 }
-
 
 .reactjstext {
     color: var(--javascript-color);
@@ -169,110 +234,8 @@ body {
     border: 3px solid var(--htm-color);
 }
 
-
-.left-container {
-    left: 0;
-}
-
-.right-container {
-    left: 50%;
-}
-
-.container img {
-    position: absolute;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%; /* Makes the image circular */
-    border: 3px solid var(--htm-color); /* Border with color */
-    background: black;
-    right: -20px;
-    top: 32px;
-    z-index: 10;
-}
-
-.right-container img {
-    left: -20px; /* Adjust for right container */
-}
-
-
-.right-container img {
-    left: -20px;
-}
-
-.timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    height: 100%;
-    background: var(--htm-color);
-    top: 0;
-    left: 50%;
-    margin-left: -3px;
-    z-index: -1;
-    animation: moveline 6s linear forwards;
-}
-
-@keyframes moveline {
-
-    0% {
-        height: 0;
-    }
-
-    100% {
-        height: 100%;
-    }
-}
-
-.text-box small {
-    display: inline-block;
-    margin-bottom: 15px;
-}
-.left-container-arrow {
-    position: absolute;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent #ffffff transparent transparent; /* Adjust color here */
-    right: -20px; /* Adjusted for better alignment */
-    top: 32px; /* Matches the circular section */
-}
-
-/* Right arrow for right-container */
-.right-container-arrow {
-    position: absolute;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent #ffffff; /* Adjust color here */
-    left: -20px;
-    top: 32px; /* Matches the circular section */
-}
-
-/* Match arrows with card types */
-.htmlarrow {
-    border-color: transparent var(--htm-color) transparent transparent;
-}
-
-.javascriptarrow {
-    border-color: transparent transparent transparent var(--htm-color);
-}
-
-.reactjsarrow {
-    border-color: transparent transparent transparent var(--htm-color);
-}
-.nodejsarrow {
-    border-color: transparent transparent transparent var(--htm-color);
-}
-.left-container-arrow reactjsarrow {
-    border-color: transparent transparent transparent var(--htm-color);
-}
-
-/* Add a hover animation for arrows */
-
-
-
-
-
 /* Responsive Timeline */
-
 @media screen and (max-width: 600px) {
-
     .timeline {
         margin: 50px auto;
     }
@@ -301,7 +264,6 @@ body {
 
     .right-container img,
     .left-container img {
-        
         left: 10px;
     }
 
@@ -309,8 +271,9 @@ body {
     .right-container-arrow {
         left: -15px;
     }
-    
 }
+
+/* Glowing underline */
 .underline-glow {
     margin: 0 auto;
     margin-bottom: 50px;
@@ -319,4 +282,4 @@ body {
     background-color: #f87171; /* Tailwind text-rose-400 color */
     border-radius: 3px;
     box-shadow: 0 0 15px rgba(248, 113, 113, 0.8), 0 0 25px rgba(248, 113, 113, 0.6); /* Glowing effect */
-  }
+}
