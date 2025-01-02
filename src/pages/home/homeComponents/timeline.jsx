@@ -14,7 +14,10 @@ const Timeline = () => {
 
         <div className='main'>
 
-            <h1 className="font-crossFly text-4xl"> Our <span className="text-4xl italic text-rose-500 font-crossFly  glow-text"> Journey </span> </h1>
+            <h1 className="font-knightWarrior text-7xl drop-shadow-[3px_3px_0px_#000]"> Our <span className="text-7xl italic text-rose-500 font-knightWarrior glow-text mb-8 "> Journey </span> </h1>
+
+                {/* Glowing Underline */}
+       <div className="underline-glow"></div>
 
             <div className='timeline'>
 
@@ -27,11 +30,11 @@ const Timeline = () => {
 
                     <div className='text-box htmlcard'>
 
-                        <h2 className='htmltext font-knightWarrior text-3xl pb-2'> The Beginning </h2>
+                        <h2 className='htmltext font-knightWarrior text-3xl pt-4 pb-4 uppercase'> The Beginning </h2>
 
-                        <span className='company font-crossFly text-1xl text-white'>2010</span>
+                        <span className='company font-crossFly text-1xl text-white pb-4'>2010</span>
 
-                        <p className='pt-2 font-serif text-white glow-text text-1xl'>
+                        <p className='pt-4 font-serif text-white glow-text text-1xl pb-4'>
                         Shaurya has been at the helm of conducting all
                         the sports activities in the institute. The
                         committee organizes events Samar (the annual
@@ -57,11 +60,11 @@ const Timeline = () => {
 
                     <div className='text-box javascriptcard'>
 
-                        <h2 className='javascripttext font-knightWarrior text-3xl pb-2'> Samar </h2>
+                        <h2 className='javascripttext font-knightWarrior text-3xl pb-4 pt-4 uppercase'> Samar </h2>
 
-                        <span className='company font-crossFly text-1xl text-white'>2010</span>
+                        <span className='company font-crossFly text-1xl text-white pb-4'>2010</span>
 
-                        <p className='pt-2 font-serif text-white glow-text text-1xl'>
+                        <p className='pt-4  pb-4 font-serif text-white glow-text text-1xl'>
                         SAMAR is the Annual College Sports Festival
                         of NIT Raipur. It is a four-day mega event
                         held in the during winter in which provides
@@ -86,11 +89,11 @@ const Timeline = () => {
 
                     <div className='text-box reactjscard'>
 
-                        <h2 className='reactjstext font-knightWarrior text-2xl pb-2'>Achievements</h2>
+                        <h2 className='reactjstext font-knightWarrior text-2xl pb-4 pt-4 uppercase'>Achievements</h2>
 
-                        <span className='company font-crossFly text-1xl text-white'>2010</span>
+                        <span className='company font-crossFly text-1xl text-white pb-4'>2024</span>
 
-                        <p className='pt-2  text-white text-1xl font-serif glow-text'>
+                        <p className='pt-4 pb-4  text-white text-1xl font-serif glow-text'>
 
                         This year has been nothing short of extraordinary for our sports
                         teams, showcasing outstanding talent and unwavering dedication.
@@ -114,11 +117,11 @@ const Timeline = () => {
 
                     <div className='text-box nodejscard'>
 
-                        <h2 className='nodejstext font-knightWarrior text-3xl pb-2'> Coming Soon </h2>
+                        <h2 className='nodejstext font-knightWarrior text-3xl pb-4 pt-4 uppercase'> Coming Soon </h2>
 
-                         <span className='company font-crossFly text-1xl text-white'> 2025 </span>
+                         <span className='company font-crossFly text-1xl text-white pb-4'> 2025 </span>
 
-                        <p className='pt-2 text-white text-1xl font-serif glow-text'>
+                        <p className='pt-4 pb-4 text-white text-1xl font-serif glow-text'>
 
                         SAMAR will be back with its new edition with gamify range of exciting sports events. Stay tuned with us through our social media handles to make sure you don't miss out on the next big sports revolution!
 

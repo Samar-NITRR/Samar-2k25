@@ -1,46 +1,90 @@
 .home-page-bg {
-    background: url('../../../assets/customillustration/homebackground.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: white;
+  background: url('../../../assets/customillustration/homebackground.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+.Sponsors {
+  margin-top: 50px;
+  text-align: center;
+  height: auto;
+  overflow: visible;
+}
+
+h1 {
+ margin-bottom: 30px;
+}
+
+
+.image_wrapper {
+  margin: 0px 40px;
+}
+
+.image_wrapper img {
+  width: 60%;
+  height: 60%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image_wrapper img:hover {
+  transform: scale(1.05);
+}
+
+.marquee-container {
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 100%;
+  height: fit-content;
+  padding: 30px;
+  background: rgba(000, 000, 000, 0.1);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.underline-glow {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  width: 1000px;
+  height: 5px; /* Line thickness */
+  background-color: #f87171; /* Tailwind text-rose-400 color */
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgba(248, 113, 113, 0.8), 0 0 25px rgba(248, 113, 113, 0.6); /* Glowing effect */
+}
+ h1 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  color: white;
+  text-align: center;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
-  
-  .Sponsers {
-    margin-top: 50px;
-    background: transparent;
-    text-align: center;
-  }
-  
-  .title {
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  .image_wrapper {
-    margin: 0px 30px;
-  }
-  
+
   .image_wrapper img {
+    max-width: 100px;
+    width: fit-content;
+    height: 150px;
+  }
+
+  .underline-glow {
     width: 80%;
-    transition: transform 0.3s ease-in-out;
   }
-  
-  .image_wrapper img:hover {
-    transform: scale(1.1);
-  }
-  
-  /* Blurred Transparent Box */
+}
+
+@media (max-width: 480px) {
   .marquee-container {
-    margin: 0 auto;
-    width: 90%; /* Adjust the width as needed */
-    padding: 20px 0;
-    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
-    border-radius: 20px; /* Rounded corners */
-    backdrop-filter: blur(10px); /* Blur effect */
-    -webkit-backdrop-filter: blur(10px); /* For Safari */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    padding: 10px 0;
   }
+
+  .image_wrapper img {
+    max-width: 80px;
+  }
+}

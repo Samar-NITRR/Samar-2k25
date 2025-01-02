@@ -5,12 +5,12 @@ import { FaInstagram, FaLinkedin, FaFacebook } from 'react-icons/fa';
 
 function Footer() {
     return (
-        <div className="w-full h-[calc(100vh-80px)] text-white py-12 px-10">
+        <div className="w-full h-[calc(100vh-80px)] text-white py-5 px-5">
             <footer className="w-full h-full bg-black bg-opacity-75 backdrop-blur-lg text-white py-12 rounded-[60px]">
                 <div className="mx-auto px-8 lg:px-40">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div className='w-full h-full flex flex-row justify-center items-center mr-28'>
-                            <div className="h-full flex flex-col justify-evenly w-[500px]">
+                            <div className="h-full flex flex-col justify-evenly w-[600px]">
                                 <div className="flex items-center gap-4">
                                     <img src={SamarLogo} alt="Samar Logo" className="w-20 md:w-36" />
                                     <div>
@@ -18,7 +18,7 @@ function Footer() {
                                             SAMAR
                                         </h2>
                                         <p className="text-center md:text-left mt-2 font-speedPixel text-gray-200">
-                                            The Annual Sports Festival of NIT Raipur, Samar, is a four-day mega event held in winter. It attracts over 12,000 students from more than 35 colleges and schools, providing a platform to showcase their talent in sports and games.
+                                            The Annual Sports Festival of NIT Raipur, Samar, is a four-day mega event held in winter. It attracts over l2,000 students from more than 35 colleges and schools, providing a platform to showcase their talent in sports and games.
                                         </p>
                                     </div>
                                 </div>
@@ -51,7 +51,7 @@ function Footer() {
                             </div>
 
                             <div>
-                                <h3 className="text-xl font-crossFly italic mb-4 text-center md:text-right">
+                                <h3 className="text-xl font-crossFly italic mb-4 text-center md:text-right uppercase mt-8">
                                     Contact Us
                                 </h3>
 
@@ -68,7 +68,7 @@ function Footer() {
                                     />
                                     <input
                                         type="text"
-                                        placeholder="Company/Organization Name"
+                                        placeholder="Company / Organization Name"
                                         className="w-full font-speedPixelItalic p-3 px-7 rounded-xl border border-gray-600  text-black focus:outline-none focus:border-blue-500"
                                         required
                                     />

@@ -16,7 +16,7 @@
 
     --htm-color:        #f43f5e;
 
-    --javascript-color: #fdd634;
+    --javascript-color: #fdd535;
 
     --reactjs-color:    #00d8ff;
 
@@ -36,7 +36,7 @@ body {
 
 .main h1 {
     margin-top: 50px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     color: white;
     text-align: center;
 }
@@ -46,6 +46,7 @@ body {
     position: relative;
     max-width: 1200px;
     margin: 100px auto;
+    margin-top: 60px;
 }
 
 .container {
@@ -310,3 +311,12 @@ body {
     }
     
 }
+.underline-glow {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 1000px; /* Adjust width as needed */
+    height: 5px; /* Line thickness */
+    background-color: #f87171; /* Tailwind text-rose-400 color */
+    border-radius: 3px;
+    box-shadow: 0 0 15px rgba(248, 113, 113, 0.8), 0 0 25px rgba(248, 113, 113, 0.6); /* Glowing effect */
+  }

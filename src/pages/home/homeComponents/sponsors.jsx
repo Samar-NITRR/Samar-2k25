@@ -9,14 +9,15 @@ import img7 from '../../../assets/sponsors/sbi.png';
 import img8 from '../../../assets/sponsors/lic.png';
 import img9 from '../../../assets/sponsors/dom.png';
 import img10 from '../../../assets/sponsors/ola.png';
-import './sponsors.css';
+import '../homeComponents/sponsors.css';
 
 function Sponsors() {
   return (
     <div className="Sponsors">
-      <div className="title">
-        <h1 className="text-3xl italic font-crossFly rounded-tl-4xl text-rose-500 glow-text">Title Sponsors</h1>
-      </div>
+        <h1 className="font-crossFly text-4xl"> Our <span className="text-4xl italic text-rose-500 font-crossFly  glow-text mb-8 "> Past Sponsors </span> </h1>
+
+       <div className="underline-glow"></div>
+
       <div className="marquee-container">
         <Marquee direction="right" speed={100}>
           <div className="image_wrapper">
@@ -34,14 +35,6 @@ function Sponsors() {
           <div className="image_wrapper">
             <img src={img10} alt="" />
           </div>
-        </Marquee>
-      </div>
-
-      <div className="title gold-sponsors-title mt-10">
-        <h1 className="text-3xl italic font-crossFly rounded-tl-4xl text-rose-500 glow-text">Gold Sponsors</h1>
-      </div>
-      <div className="marquee-container">
-        <Marquee direction="left" speed={80}>
           <div className="image_wrapper">
             <img src={img1} alt="Gold Sponsor 1" />
           </div>
@@ -54,13 +47,11 @@ function Sponsors() {
           <div className="image_wrapper">
             <img src={img4} alt="Gold Sponsor 4" />
           </div>
-          <div className="image_wrapper">
-            <img src={img5} alt="Gold Sponsor 5" />
-          </div>
         </Marquee>
       </div>
     </div>
   );
 }
+
 
 export default Sponsors;
