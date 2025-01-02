@@ -94,7 +94,7 @@ function RoutesConfig() {
             <Route path="*" element={<SUC />} />
           </Routes>
 
-          {/* <Footer /> */}
+          <Footer />
         </>
       )}
     </Router>
