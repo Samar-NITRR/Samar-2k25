@@ -39,7 +39,7 @@ function RoutesConfig() {
     setShowHomepage(3); 
   };
 
-  const videoSource = "/src/assets/customIllustration/uni1033.mp4";
+  const videoSource = "assets/videos/uni1033.mp4";
 
   return (
     <Router>

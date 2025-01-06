@@ -1,4 +1,4 @@
-import bgvid from '../../assets/customIllustration/bgpubg.mp4'
+import bgvid from '/assets/videos/bgpubg.mp4'
 import '../home/intro.css'
 function Intro({handleClick}) {
     return (
