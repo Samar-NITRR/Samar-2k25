@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react';
-import FortniteBiome from '../assets/fortniteBiome.mp4';
+// import FortniteBiome from '../assets/fortniteBiome.mp4';
 import BGAudio from '../assets/audio/angelicalPad.mp3';
 import MuteIcon from '../assets/icons/muteIcon.png';
 import UnMuteIcon from '../assets/icons/unMuteIcon.png';
@@ -9,6 +9,7 @@ import HoverAudio from '../assets/audio/buttonHoverGTA.mp3';
 function Background() {
     const [isMuted, setIsMuted] = useState(true);
     const audioRef = useRef(null);
+    const FortniteBiome = "https://res.cloudinary.com/dujmw5q9s/video/upload/v1735453658/fortniteBiome_mlmpt6.mp4"
 
     const toggleAudio = () => {
         if (audioRef.current) {
