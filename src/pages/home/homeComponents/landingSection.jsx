@@ -7,6 +7,7 @@ import About from './abouthome.jsx';
 // import Soldier from '../../../assets/illustration/soldier.png';
 // import SamarLogo from '../../../assets/logo/samarLogoWhite.png';
 // import SamarIntroText from '../../../assets/customIllustration/samarIntroText.png';
+import SamarIntroText from '../../../assets/customIllustration/samartextsvg.svg';
 
 import HoverAudio from '../../../assets/audio/buttonHoverGTA.mp3';
 import SwordAnimation from '../../../components/swordAnimation.jsx';
@@ -20,7 +21,6 @@ function LandingSection() {
     const BackgroundFall = "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453580/backgroundFall_vjuxnm.png";
     const Soldier = "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453583/soldier_tc0jie.png";
     const SamarLogo = "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453584/samarLogoWhite_lvycab.png";
-    const SamarIntroText = "https://res.cloudinary.com/dujmw5q9s/image/upload/v1736754689/samartext_tcjltk.png";
 
     return (
         <>
