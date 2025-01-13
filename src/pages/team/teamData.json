@@ -3,42 +3,42 @@
     {
       "Name": "Chaman Patel",
       "Branch": "",
-      "Photo": "./src/assets/TeamImagesHC/ChamanPatel.png",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453605/ChamanPatel_qu3jlg.png",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     },
     {
       "Name": "Karan Singh Raghuvanshi",
       "Branch": "Chemical",
-      "Photo": "./src/assets/TeamImagesHC/KaranSinghRaghuvanshi.png",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453605/KaranSinghRaghuvanshi_ca1ffn.png",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     },
     {
       "Name": "Arpit Singh Jakhar",
       "Branch": "",
-      "Photo": "./src/assets/TeamImagesHC/Arpitsinghjakhar.png",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453603/Arpitsinghjakhar_r3gz9z.png",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     },
     {
       "Name": "Shivanshu Singh",
       "Branch": "Metallurgy",
-      "Photo": "./src/assets/TeamImagesHC/ShivanshuSingh.jpg",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453664/ShivanshuSingh_gzirth.jpg",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     },
     {
       "Name": "Ritik Roshan Padhi",
       "Branch": "Information Technology",
-      "Photo": "./src/assets/TeamImagesHC/RitikPadhi.jpeg",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453608/RitikPadhi_ecb50j.jpg",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     },
     {
       "Name": "Anagha Bodhke",
       "Branch": "Biotechnology",
-      "Photo": "./src/assets/TeamImagesHC/AnaghaBodhke.jpg",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453600/AnaghaBodhke_c2iqlc.jpg",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     }
@@ -49,7 +49,7 @@
       "Branch": "Metallurgy and Materials Engineering",
       "Domain": "Sports coordinator",
       "designation": "HC",
-      "Photo": "./src/assets/TeamImagesHC/AshishSharma.jpg",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453685/AshishSharma_qpuews.jpg",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     },
@@ -58,7 +58,7 @@
       "Branch": "Electrical",
       "Domain": "Sports cordinator",
       "designation": "HC",
-      "Photo": "./src/assets/TeamImagesHC/Abhilashkar.jpg",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453629/Abhilashkar_vacxhn.jpg",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     },
@@ -67,7 +67,7 @@
       "Branch": "Mechanical",
       "Domain": "Sports Coordinator",
       "designation": "HC",
-      "Photo": "./src/assets/TeamImagesHC/AyushVerma.jpg",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453606/AyushVerma_ztwguh.jpg",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     },
@@ -76,7 +76,7 @@
       "Branch": "Mining Engineering",
       "Domain": "Sports Coordinator",
       "designation": "HC",
-      "Photo": "./src/assets/TeamImagesHC/ShubhamRana.png",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453612/ShubhamRana_ejctgq.png",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     },
@@ -85,7 +85,7 @@
       "Branch": "Mining Engineering",
       "Domain": "Sports Coordinator",
       "designation": "HC",
-      "Photo": "./src/assets/TeamImagesHC/RhonitBiswal.jpg",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453706/RhonitBiswal_fzkfrl.jpg",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     },
@@ -94,7 +94,7 @@
       "Branch": "Metallurgical and Materials",
       "Domain": "Sports Coordinator",
       "designation": "HC",
-      "Photo": "./src/assets/TeamImagesHC/Ashish.jpg",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453612/Ashish_vqrnnc.jpg",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     },
@@ -103,7 +103,7 @@
       "Branch": "Mining engineering",
       "Domain": "Sports Coordinator",
       "designation": "HC",
-      "Photo": "./src/assets/TeamImagesHC/KilaparthiPriyanka.jpeg",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453609/KilaparthiPriyanka_ygplrc.jpg",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     },
@@ -112,7 +112,7 @@
       "Branch": "Mechanical Engineering",
       "Domain": "Sports Coordinator",
       "designation": "HC",
-      "Photo": "./src/assets/TeamImagesHC/PrakharBorkar.jpg",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453623/PrakharBorkar_vndd8n.jpg",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     },
@@ -121,7 +121,7 @@
       "Branch": "CSE",
       "Domain": "Sports coordinator",
       "designation": "HC",
-      "Photo": "./src/assets/TeamImagesHC/KMSUMANTH.jpg",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453698/KMSUMANTH_zzliio.jpg",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     },
@@ -130,7 +130,7 @@
       "Branch": "Biotechnology",
       "Domain": "Sports coordinator",
       "designation": "HC",
-      "Photo": "./src/assets/TeamImagesHC/AbhayDubey.jpg",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453602/AbhayDubey_kbwhba.jpg",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     },
@@ -139,7 +139,7 @@
       "Branch": "Metallurgical and materials engineering",
       "Domain": "Sports coordinator",
       "designation": "HC",
-      "Photo": "./src/assets/TeamImagesHC/Sudhanshupatel.png",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453614/Sudhanshupatel_zbkxt3.png",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     },
@@ -148,7 +148,7 @@
       "Branch": "Civil",
       "Domain": "Sports coordinator",
       "designation": "HC",
-      "Photo": "./src/assets/TeamImagesHC/RitikSahu.jpg",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453611/RitikSahu_uwdvff.jpg",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     },
@@ -157,7 +157,7 @@
       "Branch": "Metallurgical and Materials Engineering",
       "Domain": "Sports Coordinator",
       "designation": "HC",
-      "Photo": "./src/assets/TeamImagesHC/AdityaSoni.jpeg",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453606/AdityaSoni_apyzso.jpg",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     },
@@ -166,7 +166,7 @@
       "Branch": "Mining",
       "Domain": "Sports coordinator",
       "designation": "HC",
-      "Photo": "./src/assets/TeamImagesHC/AmardeepKumar.jpg",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453601/AmardeepKumar_jrlztd.jpg",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     },
@@ -184,7 +184,7 @@
       "Branch": "Mining",
       "Domain": "Sports coordinator",
       "designation": "HC",
-      "Photo": "./src/assets/TeamImagesHC/SomprakashRathore.jpg",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453614/SomprakashRathore_rkv8wv.jpg",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     }
@@ -195,7 +195,7 @@
       "Branch": "Mechanical",
       "Domain": "Design",
       "designation": "HC",
-      "Photo": "./src/assets/TeamImagesHC/SriyanshuJaiswal.jpg",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453611/SriyanshuJaiswal_wbr3bq.jpg",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     },
@@ -215,7 +215,7 @@
       "Branch": "Chemical Engineering",
       "Domain": "Public Relations",
       "designation": "HC",
-      "Photo": "./src/assets/TeamImagesHC/AkshatGauraha.jpg",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453597/AkshatGauraha_netyaj.jpg",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     },
@@ -224,7 +224,7 @@
       "Branch": "Mining",
       "Domain": "PR",
       "designation": "HC",
-      "Photo": "./src/assets/TeamImagesHC/Shahzad.jpg",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453607/Shahzad_mnf64q.jpg",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     },
@@ -233,7 +233,7 @@
       "Branch": "Electrical engineering",
       "Domain": "PR",
       "designation": "HC",
-      "Photo": "./src/assets/TeamImagesHC/AnshumanSingh.jpg",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453599/AnshumanSingh_c5j5in.jpg",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     }
@@ -244,7 +244,7 @@
       "Branch": "Electronics and Communication",
       "Domain": "Spons",
       "designation": "HC",
-      "Photo": "./src/assets/TeamImagesHC/JatinGarhewal.jpeg",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453603/JatinGarhewal_yndbvb.jpg",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     },
@@ -253,7 +253,7 @@
       "Branch": "Civil engg.",
       "Domain": "Spons",
       "designation": "HC",
-      "Photo": "./src/assets/TeamImagesHC/AashutoshSahu.jpg",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453597/AashutoshSahu_zurgyo.jpg",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     },
@@ -262,7 +262,7 @@
       "Branch": "Chemical Engineering",
       "Domain": "Sponsorship",
       "designation": "HC",
-      "Photo": "./src/assets/TeamImagesHC/NAMITCHAWDA.jpg",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453605/NAMITCHAWDA_kuclk6.jpg",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     }
@@ -273,7 +273,7 @@
       "Branch": "ECE",
       "Domain": "Web-dev",
       "designation": "HC",
-      "Photo": "./src/assets/TeamImagesHC/ShankarPalagani.jpg",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453632/ShankarPalagani_joppsl.jpg",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     },
@@ -282,7 +282,7 @@
       "Branch": "MME",
       "Domain": "Web-dev",
       "designation": "HC",
-      "Photo": "./src/assets/TeamImagesHC/AkshayJain.jpg",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453597/AkshayJain_faa4tn.jpg",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     }
@@ -293,7 +293,7 @@
       "Branch": "Metallurgical and materials",
       "Domain": "EM",
       "designation": "HC",
-      "Photo": "./src/assets/TeamImagesHC/YashKumarGupta.jpg",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453618/YashKumarGupta_axlgdf.jpg",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     },
@@ -302,7 +302,7 @@
       "Branch": "Mining",
       "Domain": "EM",
       "designation": "HC",
-      "Photo": "./src/assets/TeamImagesHC/VishalKumar.jpg",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453614/VishalKumar_qw9tzj.jpg",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     },
@@ -311,7 +311,7 @@
       "Branch": "Mechanical",
       "Domain": "Event Management",
       "designation": "HC",
-      "Photo": "./src/assets/TeamImagesHC/ArpanKumarPurkait.jpg",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453639/ArpanKumarPurkait_zowmqe.jpg",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     },
@@ -329,7 +329,7 @@
       "Branch": "Mining engineering",
       "Domain": "EM",
       "designation": "HC",
-      "Photo": "./src/assets/TeamImagesHC/VikashPandey.jpg",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453614/VikashPandey_lqkcvt.jpg",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     },
@@ -338,7 +338,7 @@
       "Branch": "MME",
       "Domain": "EM",
       "designation": "HC",
-      "Photo": "./src/assets/TeamImagesHC/ShashankPillai.jpeg",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453639/ShashankPillai_xgjz6j.jpg",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     },
@@ -356,7 +356,7 @@
       "Branch": "Biotechnology",
       "Domain": "Event management",
       "designation": "HC",
-      "Photo": "./src/assets/TeamImagesHC/SharvariDambhe.jpg",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453609/SharvariDambhe_lauw3k.jpg",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     }
@@ -367,7 +367,7 @@
       "Branch": "Metallurgical and Materials Engineering",
       "Domain": "Documentation",
       "designation": "HC",
-      "Photo": "./src/assets/TeamImagesHC/PriyanshuMishra.jpg",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453606/PriyanshuMishra_qla74c.jpg",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     }

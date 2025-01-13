@@ -1,14 +1,19 @@
 import React from 'react';
 import bgImage from '../../assets/illustration/teamBg.png';
 import coBox from '../../assets/illustration/co_box.png';
-import instagramLogo from '../../assets/socialMediaLogo/instaLogo.png';
-import linkedinLogo from '../../assets/socialMediaLogo/linkedInLogo.png';
+// import instagramLogo from '../../assets/socialMediaLogo/instaLogo.png';
+// import linkedinLogo from '../../assets/socialMediaLogo/linkedInLogo.png';
 import teamData from './teamData.json'; 
 import coordinatorData from './coordinator.json'; 
 import executiveData from './executive.json'; 
 import './team.css'; 
 
+
+
 function Team() {
+  const linkedinLogo = "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453591/linkedInLogo_xkvlbp.png";
+  const instagramLogo = "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453590/instaLogo_p6tzha.png";
+
   return (
     <div
       className="w-full min-h-screen bg-cover bg-fixed bg-center text-white pt-[80px]"
