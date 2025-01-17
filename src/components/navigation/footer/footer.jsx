@@ -5,7 +5,7 @@ import { FaInstagram, FaLinkedin, FaFacebook } from 'react-icons/fa';
 
 function Footer() {
     return (
-        <div id='contactus' className="w-full h-[calc(100vh-80px)] text-white py-5 px-5">
+        <div id='contactus' className="w-full text-white py-5 px-5">
             <footer className="w-full h-full bg-black bg-opacity-75 backdrop-blur-lg text-white py-12 rounded-[60px]">
                 <div className="mx-auto px-8 lg:px-40">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
