@@ -39,21 +39,21 @@ function Header() {
                     isMenuOpen ? 'flex flex-col items-center' : 'hidden xl:flex'
                 }`}
             >
-                <a
-                    href="/"
+                <NavLink
+                    to="/"
                     className='px-8 py-3 text-white hover:text-rose-400 font-crossFly text-xs tracking-widest'
                     onMouseEnter={handleHover}
                 >
                     HOME
-                </a>
+                </NavLink>
 
-                <a
-                    href="#about"
+                <NavLink
+                    to="#about"
                     className='px-8 py-3 text-white hover:text-rose-400 font-crossFly text-xs tracking-widest'
                     onMouseEnter={handleHover}
                 >
                     ABOUT
-                </a>
+                </NavLink>
 
                 <NavLink
                     to="/merchandise"
@@ -75,9 +75,9 @@ function Header() {
                 </a>
             </div>
 
-            <button className='hidden md:block border-2 px-8 py-3 border-rose-200 bg-rose-500 text-white italic font-crossFly rounded-tl-3xl rounded-br-3xl hover:rounded-lg hover:text-white hover:scale-[.97] transition-all ease-in-out duration-75' onMouseEnter={handleHover}>
+            <a href='https://samar-2k25-game.vercel.app/' className='hidden md:block border-2 px-8 py-3 border-rose-200 bg-rose-500 text-white italic font-crossFly rounded-tl-3xl rounded-br-3xl hover:rounded-lg hover:text-white hover:scale-[.97] transition-all ease-in-out duration-75' onMouseEnter={handleHover}>
                 PLAY
-            </button>
+            </a>
         </header>
     );
 }
