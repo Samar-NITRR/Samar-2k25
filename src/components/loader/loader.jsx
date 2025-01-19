@@ -5,8 +5,8 @@ const Loader = () => {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    const interval = 20;
-    const increment = 1.33;
+    const interval = 10; // 10ms interval for a higher refresh rate
+    const increment = 0.67; // Increase by 0.67% every 10ms to complete in 1.5 seconds
 
     const timer = setInterval(() => {
       setProgress((prevProgress) => {
@@ -35,7 +35,7 @@ const Loader = () => {
             className="h-full bg-slate-300 rounded-full"
             style={{
               width: `${progress}%`,
-              transition: "width 0.2s ease-out",
+              transition: "width 0.01s ease-out", // Smooth transition
             }}
           ></div>
         </div>
