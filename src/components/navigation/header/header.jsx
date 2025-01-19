@@ -16,9 +16,17 @@ function Header() {
         setIsMenuOpen((prev) => !prev);
     };
 
+    const handleScrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };    
+
+    const handleScroll = () => {
+        const element = document.getElementById("about");
+        element.scrollIntoView({ behavior: 'smooth' });
+    };
+
     return (
         <header className='fixed top-0 w-screen h-[80px] px-6 md:px-28 bg-slate-800 bg-opacity-30 backdrop-blur-xl transition-all duration-300 flex flex-row justify-between items-center border-b border-white border-opacity-50 z-50'>
-            {/* Logo and Title */}
             <div className='flex flex-row justify-start items-center gap-6'>
                 <img src={samarLogo} alt="Samar Logo" width="60px" height="60px" />
                 <h1 className='text-lg text-white'>|</h1>
@@ -41,16 +49,18 @@ function Header() {
             >
                 <NavLink
                     to="/"
-                    className='px-8 py-3 text-white hover:text-rose-400 font-crossFly text-xs tracking-widest'
+                    className="px-8 py-3 text-white hover:text-rose-400 font-crossFly text-xs tracking-widest"
                     onMouseEnter={handleHover}
+                    onClick={handleScrollToTop}
                 >
                     HOME
                 </NavLink>
 
                 <NavLink
                     to="#about"
-                    className='px-8 py-3 text-white hover:text-rose-400 font-crossFly text-xs tracking-widest'
+                    className="px-8 py-3 text-white hover:text-rose-400 font-crossFly text-xs tracking-widest"
                     onMouseEnter={handleHover}
+                    onClick={handleScroll}
                 >
                     ABOUT
                 </NavLink>
