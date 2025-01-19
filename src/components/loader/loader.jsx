@@ -3,23 +3,23 @@ import "./loaderStyles.css";
 
 const Loader = () => {
   const [progress, setProgress] = useState(0);
+  const intervalDuration = 1000 / 60; // 60 Hz refresh rate (~16.67ms)
 
   useEffect(() => {
-    const interval = 10; // 10ms interval for a higher refresh rate
-    const increment = 0.67; // Increase by 0.67% every 10ms to complete in 1.5 seconds
+    const increment = 100 / (1.5 * 60); // Progress increment for 1.5 seconds
 
     const timer = setInterval(() => {
       setProgress((prevProgress) => {
         if (prevProgress >= 100) {
-          clearInterval(timer);
+          clearInterval(timer); // Clear the interval when progress reaches 100%
           return 100;
         }
         return prevProgress + increment;
       });
-    }, interval);
+    }, intervalDuration);
 
-    return () => clearInterval(timer);
-  }, []);
+    return () => clearInterval(timer); // Cleanup on component unmount
+  }, [intervalDuration]);
 
   return (
     <>
@@ -35,7 +35,7 @@ const Loader = () => {
             className="h-full bg-slate-300 rounded-full"
             style={{
               width: `${progress}%`,
-              transition: "width 0.01s ease-out", // Smooth transition
+              transition: `width ${intervalDuration}ms linear`, // Smooth transition
             }}
           ></div>
         </div>
