@@ -6,7 +6,7 @@ const Loader = () => {
 
   useEffect(() => {
     const interval = 20;
-    const increment = 0.5;
+    const increment = 1.33;
 
     const timer = setInterval(() => {
       setProgress((prevProgress) => {
