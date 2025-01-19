@@ -30,7 +30,7 @@ function Background() {
 
     return (
         <>
-            <video src={FortniteBiome} autoPlay muted={isMuted} loop className="fixed w-screen h-screen object-cover z-[-20] blur-[2px] inset-0">
+            <video src={FortniteBiome} autoPlay muted={isMuted} loop disablePictureInPicture playsInline className="fixed w-screen h-screen object-cover z-[-20] blur-[2px] inset-0">
                 Your browser does not support the video tag.
             </video>
 
