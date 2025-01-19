@@ -1,16 +1,9 @@
 import { NavLink } from 'react-router-dom';
 import { useRef } from 'react';
 import '../homeStyles.css'
-import About from './abouthome.jsx';
 
-// import BackgroundFall from '../../../assets/illustration/backgroundFall.png';
-// import Soldier from '../../../assets/illustration/soldier.png';
-// import SamarLogo from '../../../assets/logo/samarLogoWhite.png';
-// import SamarIntroText from '../../../assets/customIllustration/samarIntroText.png';
 import SamarIntroText from '../../../assets/customIllustration/samartextsvg.svg';
-
 import HoverAudio from '../../../assets/audio/buttonHoverGTA.mp3';
-import SwordAnimation from '../../../components/swordAnimation.jsx';
 
 function LandingSection() {
     const hoverAudioRef = useRef(new Audio(HoverAudio));
@@ -66,13 +59,6 @@ function LandingSection() {
                     </div>
                 </main>
             </section>
-
-            <SwordAnimation />
-
-            <div id='about' className='mt-48'>
-                <About />
-            </div>
-
         </>
     )
 }
