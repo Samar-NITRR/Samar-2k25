@@ -39,21 +39,21 @@ function Header() {
                     isMenuOpen ? 'flex flex-col items-center' : 'hidden xl:flex'
                 }`}
             >
-                <a
-                    href="/"
+                <NavLink
+                    to="/"
                     className='px-8 py-3 text-white hover:text-rose-400 font-crossFly text-xs tracking-widest'
                     onMouseEnter={handleHover}
                 >
                     HOME
-                </a>
+                </NavLink>
 
-                <a
-                    href="#about"
+                <NavLink
+                    to="#about"
                     className='px-8 py-3 text-white hover:text-rose-400 font-crossFly text-xs tracking-widest'
                     onMouseEnter={handleHover}
                 >
                     ABOUT
-                </a>
+                </NavLink>
 
                 <NavLink
                     to="/merchandise"
