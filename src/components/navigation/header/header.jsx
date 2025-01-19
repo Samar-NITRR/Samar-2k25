@@ -32,7 +32,6 @@ function Header() {
                 aboutSection.scrollIntoView({ behavior: 'smooth' });
             }
         } else {
-            // Navigate to Home first, then scroll
             navigate('/');
             setTimeout(() => {
                 const aboutSection = document.getElementById("about");
@@ -93,6 +92,18 @@ function Header() {
                     onMouseEnter={handleHover}
                 >
                     MERCHANDISE
+                </NavLink>
+
+                <NavLink
+                    to="/team"
+                    className={({ isActive }) =>
+                        `px-8 py-3 hover:text-rose-400 font-crossFly text-xs tracking-widest ${
+                            isActive ? 'text-rose-400' : 'text-white'
+                        }`
+                    }
+                    onMouseEnter={handleHover}
+                >
+                    TEAM
                 </NavLink>
 
                 <a 

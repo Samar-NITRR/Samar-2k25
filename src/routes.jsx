@@ -20,7 +20,7 @@ function AppContent() {
     const [showHomepage, setShowHomepage] = useState(1);
     const videoRef = useRef(null);
 
-    const hideHeaderFooterPaths = ['/merchandise'];
+    const hideHeaderFooterPaths = ['/merchandise', '/register', '/register/cricket', '/register/badminton_(singles)', '/register/badminton_(doubles)', '/register/basketball', '/register/vollyball', '/register/football', '/register/chess', '/register/athletics', '/register/hockey', '/register/handball', '/register/kabaddi', '/register/khokho', '/register/tt_singles', '/register/tt_doubles'];
     const shouldShowHeaderFooter = !hideHeaderFooterPaths.includes(location.pathname);
 
     useEffect(() => {

@@ -11,6 +11,7 @@ import './team.css';
 function Team() {
   return (
     <div
+      id='team'
       className="w-full min-h-screen bg-cover bg-fixed bg-center text-white pt-[80px]"
       style={{
         backgroundImage: `url(${bgImage})`,
