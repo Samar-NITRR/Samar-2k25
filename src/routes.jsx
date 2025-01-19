@@ -87,7 +87,7 @@ function RoutesConfig() {
                         Your browser does not support the video tag.
                     </video>
 
-                    <button className='mt-8 border-2 text-xl italic border-rose-500 text-white font-crossFly rounded-tl-3xl rounded-br-3xl hover:bg-rose-500 hover:rounded-lg hover:scale-[.97] transition-all ease-in-out backdrop-blur-lg duration-75' onClick={handleSkip} style={{ position: "absolute", bottom: "20px", right: "20px", padding: "10px 20px", fontSize: "16px", zIndex: 1000 }}>
+                    <button className='mt-8 border-2 text-xl italic border-rose-500 text-white font-crossFly rounded-tl-3xl rounded-br-3xl hover:bg-rose-500 hover:rounded-lg hover:scale-[.97] transition-all ease-in-out backdrop-blur-lg duration-75 bottom-[60px] md:bottom-[20px]' onClick={handleSkip} style={{ position: "absolute", right: "20px", padding: "10px 20px", fontSize: "16px", zIndex: 1000 }}>
                         Skip
                     </button>
                 </div>
@@ -96,7 +96,7 @@ function RoutesConfig() {
 					{showHomepage === 3 && <Header />}
 					
 					<Routes>
-						<Route path="/" element={<Home showHomepage={showHomepage} setShowHomepage={setShowHomepage}/>} />
+						<Route path="/" element={<Home/>} />
 						<Route path="/about" element={<About />} />
 						<Route path="/merchandise" element={<Merchandise />} />
 						<Route path="/team" element={<Team />} />

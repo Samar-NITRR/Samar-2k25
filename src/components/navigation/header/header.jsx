@@ -85,7 +85,7 @@ function Header() {
                 </a>
             </div>
 
-            <a href='https://samar-2k25-game.vercel.app/' className='hidden md:block border-2 px-8 py-3 border-rose-200 bg-rose-500 text-white italic font-crossFly rounded-tl-3xl rounded-br-3xl hover:rounded-lg hover:text-white hover:scale-[.97] transition-all ease-in-out duration-75' onMouseEnter={handleHover}>
+            <a href='https://samar-2k25-game.vercel.app/' className='hidden xl:block border-2 px-8 py-3 border-rose-200 bg-rose-500 text-white italic font-crossFly rounded-tl-3xl rounded-br-3xl hover:rounded-lg hover:text-white hover:scale-[.97] transition-all ease-in-out duration-75' onMouseEnter={handleHover}>
                 PLAY
             </a>
         </header>

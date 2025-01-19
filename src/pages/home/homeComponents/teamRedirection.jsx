@@ -21,7 +21,7 @@ const TeamButton = () => {
 function TeamRedirection() {
     return (
         <>
-            <div className='flex flex-col justify-center items-center mb-36'>
+            <div className='flex flex-col justify-center items-center mb-36' data-aos="fade-up">
 				<div className='w-full flex flex-col justify-center items-center backdrop-blur-md rounded-[25px] p-14 '>
 					<h1 className='font-crossFly uppercase text-3xl drop-shadow-[3px_3px_0px_#000]'>Meet the Team of Samar</h1>
 					<NavLink to="/team">
