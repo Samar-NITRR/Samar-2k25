@@ -16,9 +16,17 @@ function Header() {
         setIsMenuOpen((prev) => !prev);
     };
 
+    const handleScrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };    
+
+    const handleScroll = () => {
+        const element = document.getElementById("about");
+        element.scrollIntoView({ behavior: 'smooth' });
+    };
+
     return (
         <header className='fixed top-0 w-screen h-[80px] px-6 md:px-28 bg-slate-800 bg-opacity-30 backdrop-blur-xl transition-all duration-300 flex flex-row justify-between items-center border-b border-white border-opacity-50 z-50'>
-            {/* Logo and Title */}
             <div className='flex flex-row justify-start items-center gap-6'>
                 <img src={samarLogo} alt="Samar Logo" width="60px" height="60px" />
                 <h1 className='text-lg text-white'>|</h1>
@@ -39,21 +47,23 @@ function Header() {
                     isMenuOpen ? 'flex flex-col items-center' : 'hidden xl:flex'
                 }`}
             >
-                <a
-                    href="/"
-                    className='px-8 py-3 text-white hover:text-rose-400 font-crossFly text-xs tracking-widest'
+                <NavLink
+                    to="/"
+                    className="px-8 py-3 text-white hover:text-rose-400 font-crossFly text-xs tracking-widest"
                     onMouseEnter={handleHover}
+                    onClick={handleScrollToTop}
                 >
                     HOME
-                </a>
+                </NavLink>
 
-                <a
-                    href="#about"
-                    className='px-8 py-3 text-white hover:text-rose-400 font-crossFly text-xs tracking-widest'
+                <NavLink
+                    to="#about"
+                    className="px-8 py-3 text-white hover:text-rose-400 font-crossFly text-xs tracking-widest"
                     onMouseEnter={handleHover}
+                    onClick={handleScroll}
                 >
                     ABOUT
-                </a>
+                </NavLink>
 
                 <NavLink
                     to="/merchandise"
@@ -75,9 +85,9 @@ function Header() {
                 </a>
             </div>
 
-            <button className='hidden md:block border-2 px-8 py-3 border-rose-200 bg-rose-500 text-white italic font-crossFly rounded-tl-3xl rounded-br-3xl hover:rounded-lg hover:text-white hover:scale-[.97] transition-all ease-in-out duration-75' onMouseEnter={handleHover}>
+            <a href='https://samar-2k25-game.vercel.app/' className='hidden md:block border-2 px-8 py-3 border-rose-200 bg-rose-500 text-white italic font-crossFly rounded-tl-3xl rounded-br-3xl hover:rounded-lg hover:text-white hover:scale-[.97] transition-all ease-in-out duration-75' onMouseEnter={handleHover}>
                 PLAY
-            </button>
+            </a>
         </header>
     );
 }

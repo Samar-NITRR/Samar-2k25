@@ -14,7 +14,7 @@
     background-size: cover; /* Ensures the image covers the entire area */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; 
-
+    font-family: "Barlow", sans-serif;
 }
 
 .disc{

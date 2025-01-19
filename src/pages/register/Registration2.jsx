@@ -5,15 +5,17 @@ import InputForm from "./InputForm";
 import TeamLeaderForm from "./TeamLeaderForm";
 import Rules from "./Rules";
 import MemberForm from "./MemberForm";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import HomeBackground from "../../components/homeBackground";
 import { HE_GROUPS, SHE_GROUPS, SPORTS } from "./Constants";
 import UnderConstruction from "../underConstruction";
+import Loader from './loader/Loader';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Registration2 = () => {
   const { sport: sport_name } = useParams();
+  const navigate = useNavigate();
   const [sport, setSport] = useState(null);
   const [college, setCollege] = useState("");
   const [category, setCategory] = useState("");
@@ -21,6 +23,7 @@ const Registration2 = () => {
   const [leaderDetails, setLeaderDetails] = useState({});
   const [memberDetails, setMemberDetails] = useState([]);
   const [step, setStep] = useState(1);
+  const [isSubmitting, setIsSubmitting] = useState(false); 
 
   const scriptURL =
     "https://script.google.com/macros/s/AKfycbwxrQMHKa2hYdXgZrJ-EfKY7_sEDGNdt--aEB175uQHFNr7kLA1LxINyWAXP9ACwBqu/exec";
@@ -47,6 +50,7 @@ const Registration2 = () => {
   }, [sport, college, category, teamName, leaderDetails, step]);
 
   const handleSubmit = async () => {
+    setIsSubmitting(true);
     const payload = {
       sport: sport.name,
       college,
@@ -73,12 +77,16 @@ const Registration2 = () => {
 
       if (response.ok) {
         alert("Form submitted successfully!");
+        navigate("/register");
       } else {
         const errorText = await response.text();
         alert("Form submission failed: " + errorText);
       }
     } catch (error) {
       alert("An error occurred: " + error.message);
+    }
+    finally {
+      setIsSubmitting(false); // Stop loader
     }
   };
 
@@ -153,10 +161,10 @@ const Registration2 = () => {
                   />
                   <div className="flex gap-3 mt-2">
                     <button
-                      className="focus:outline-none text-white bg-blue-600 hover:bg-blue-700 active:bg-blue-500 font-medium rounded-lg text-sm px-5 py-2.5 mt-4"
-                      type="submit"
+                      className=""
+                      type="submit" disabled={isSubmitting}
                     >
-                      Submit
+                      {isSubmitting ? <Loader /> : <div className="focus:outline-none text-white bg-blue-600 hover:bg-blue-700 active:bg-blue-500 font-medium rounded-lg text-sm px-5 py-2.5 mt-4 ">Submit </div>}
                     </button>
                   </div>
                 </form>

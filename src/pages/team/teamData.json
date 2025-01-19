@@ -1,43 +1,44 @@
 {
   "OverallCoordinator": [
     {
-      "Name": "Chaman Patel",
+      "Name": "CHAMAN PATEL",
       "Branch": "",
       "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453605/ChamanPatel_qu3jlg.png",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     },
     {
-      "Name": "Karan Singh Raghuvanshi",
-      "Branch": "Chemical",
+      "Name": "KARAN SINGH RAGHUVANSHI",
+      "Branch": "",
       "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453605/KaranSinghRaghuvanshi_ca1ffn.png",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     },
+    
     {
-      "Name": "Arpit Singh Jakhar",
+      "Name": "SHIVANSHU SINGH",
+      "Branch": "",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453664/ShivanshuSingh_gzirth.jpg",
+      "instagram": "https://instagram.com/",
+      "linkedin": "https://linkedin.com/"
+    },
+    {
+      "Name": "RITIK ROSHAN PADHI",
+      "Branch": "",
+      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453608/RitikPadhi_ecb50j.jpg",
+      "instagram": "https://instagram.com/",
+      "linkedin": "https://linkedin.com/"
+    },
+    {
+      "Name": "ARPIT SINGH JAKHAR",
       "Branch": "",
       "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453603/Arpitsinghjakhar_r3gz9z.png",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     },
     {
-      "Name": "Shivanshu Singh",
-      "Branch": "Metallurgy",
-      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453664/ShivanshuSingh_gzirth.jpg",
-      "instagram": "https://instagram.com/",
-      "linkedin": "https://linkedin.com/"
-    },
-    {
-      "Name": "Ritik Roshan Padhi",
-      "Branch": "Information Technology",
-      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453608/RitikPadhi_ecb50j.jpg",
-      "instagram": "https://instagram.com/",
-      "linkedin": "https://linkedin.com/"
-    },
-    {
-      "Name": "Anagha Bodhke",
-      "Branch": "Biotechnology",
+      "Name": "ANAGHA BODHKE",
+      "Branch": "",
       "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453600/AnaghaBodhke_c2iqlc.jpg",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
