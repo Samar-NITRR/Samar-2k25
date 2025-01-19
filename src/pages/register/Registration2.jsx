@@ -10,6 +10,8 @@ import HomeBackground from "../../components/homeBackground";
 import { HE_GROUPS, SHE_GROUPS, SPORTS } from "./Constants";
 import UnderConstruction from "../underConstruction";
 import Loader from './loader/Loader';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Registration2 = () => {
   const { sport: sport_name } = useParams();
@@ -30,6 +32,7 @@ const Registration2 = () => {
     const s = SPORTS.find((sport) => sport.name === sport_name) || null;
     console.log(s);
     setSport(s);
+    AOS.init();
   }, []);
 
   useEffect(() => {
@@ -101,11 +104,11 @@ const Registration2 = () => {
             >
               {sport.display}
             </h1>
-            <div className="w-full flex flex-col justify-start items-center lg:flex-row lg:items-start border-y backdrop-blur-[5px] mt-[80px] mb-[80px]">
+            <div className="w-[97%] flex flex-col justify-start items-center lg:flex-row lg:items-start  backdrop-blur-[10px] bg-black bg-opacity-60 mt-[80px] mb-[80px] px-2 rounded-[30px] shadow-2xl">
               <div className="w-full lg:w-1/2">
                 <Rules sport={sport} />
               </div>
-              <div className="px-8 py-6 border-t lg:border-t-0 lg:border-l w-full h-full lg:w-1/2">
+              <div className="px-8 py-6 border-t lg:border-t-0 lg:border-l-2 w-full h-full lg:w-1/2">
                 <h3
                   style={{ textShadow: "2px 2px 5px black" }}
                   className=" text-center text-3xl lg:text-4xl text-rose-500 drop-shadow-lg font-crossFly uppercase font-bold mb-4"

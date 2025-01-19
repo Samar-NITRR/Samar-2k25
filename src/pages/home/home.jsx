@@ -7,8 +7,13 @@ import Timeline from './homeComponents/timeline.jsx';
 import About from './homeComponents/abouthome.jsx';
 import SwordAnimation from '../../components/swordAnimation.jsx';
 import TeamRedirection from './homeComponents/teamRedirection.jsx';
+import AOS from "aos";
+import { useEffect } from 'react';
 
 function Home() {
+    useEffect(() => {
+        AOS.init({duration: 1000, delay: 100});
+      }, []);
     return (
         <>
             <HomeBackground />

@@ -72,11 +72,9 @@ video{
 	cursor: pointer;
 	display: inline-block;
 	text-transform: uppercase;
-	width: 500px;
-    margin-top: 90px;
-
-
-
+	max-width: 500px;
+  margin-top: 90px;
+  width: 50vw;
 }
 
 .intro-button:hover .border {
