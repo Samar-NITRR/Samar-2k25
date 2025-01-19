@@ -10,7 +10,7 @@ const Rules = ({ sport }) => {
       <h3 style={{textShadow: "2px 2px 5px black"}} className="text-center text-lg lg:text-2xl text-rose-500 drop-shadow-lg font-crossFly uppercase font-bold mb-4">
         Rules and Regulations
       </h3>
-      <ul style={{textShadow: "1px 1px 2px black"}} className="list-decimal list-inside text-gray-300 space-y-2">
+      <ul style={{textShadow: "1px 1px 2px black"}} className="list-disc pl-2 text-gray-300 space-y-6">
         {sport.rules.map((rule, index) => (
           <li key={index}>{rule}</li>
         ))}

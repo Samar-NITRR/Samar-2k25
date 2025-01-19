@@ -13,14 +13,14 @@ const Timeline = () => {
     return (
         <>
             <div className='main'>
-                <h1 className="font-knightWarrior text-7xl drop-shadow-[3px_3px_0px_#000]"> Our <span className="text-7xl italic text-rose-500 font-knightWarrior glow-text mb-8 "> Journey </span> </h1>
-                <div className="underline-glow"></div>
+                <h1 data-aos="fade-up" className="font-knightWarrior text-6xl md:text-7xl drop-shadow-[3px_3px_0px_#000]"> Our <span className="text-6xl md:text-7xl italic text-rose-500 font-knightWarrior glow-text mb-8 "> Journey </span> </h1>
+                <div data-aos="fade-up" className="underline-glow"></div>
 
                 <div className='timeline'>
                     <div className='container left-container'>
                         <img src={htmlimg} alt='HTML' className=''/>
-                        <div className='text-box htmlcard'>
-                            <h2 className='htmltext font-knightWarrior text-5xl pt-4 pb-2 uppercase'> The Beginning </h2>
+                        <div data-aos="flip-right" className='text-box htmlcard'>
+                            <h2 className='htmltext font-knightWarrior text-4xl md:text-5xl pt-4 pb-2 uppercase'> The Beginning </h2>
                             <span className='company font-crossFly italic text-1xl text-white pb-4'>2010</span>
                             <p className='pt-4 font-speedPixel text-white glow-text text-1xl pb-4'>
                                 Shaurya has been at the helm of conducting all
@@ -39,8 +39,8 @@ const Timeline = () => {
 
                     <div className='container right-container '>
                         <img src={javascriptimg} alt='JavaScript' className=''/>
-                        <div className='text-box javascriptcard'>
-                            <h2 className='javascripttext font-knightWarrior text-5xl pb-2 pt-4 uppercase'> Samar </h2>
+                        <div data-aos="flip-left" className='text-box javascriptcard'>
+                            <h2 className='javascripttext font-knightWarrior text-4xl md:text-5xl pb-2 pt-4 uppercase'> Samar </h2>
                             <span className='company font-crossFly italic text-white pb-4'>2010</span>
                             <p className='pt-4  pb-4 font-speedPixel text-white glow-text'>
                                 SAMAR is the Annual College Sports Festival
@@ -58,8 +58,8 @@ const Timeline = () => {
 
                     <div className='container left-container '>
                         <img src={reactjsimg} alt='React JS' className=''/>
-                        <div className='text-box reactjscard'>
-                            <h2 className='reactjstext font-knightWarrior text-5xl pb-2 pt-4 uppercase'>Achievements</h2>
+                        <div data-aos="flip-right" className='text-box reactjscard'>
+                            <h2 className='reactjstext font-knightWarrior text-4xl md:text-5xl pb-2 pt-4 uppercase'>Achievements</h2>
                             <span className='company font-crossFly italic text-white pb-4'>2024</span>
                             <p className='pt-4 pb-4  text-white font-speedPixel glow-text'>
                                 This year has been nothing short of extraordinary for our sports
@@ -76,8 +76,8 @@ const Timeline = () => {
 
                     <div className='container right-container '>
                         <img src={nodejsimg} alt='Node JS' className=''/>
-                        <div className='text-box nodejscard'>
-                            <h2 className='nodejstext font-knightWarrior text-5xl pb-2 pt-4 uppercase'> Coming Soon </h2>
+                        <div data-aos="flip-left" className='text-box nodejscard'>
+                            <h2 className='nodejstext font-knightWarrior text-4xl md:text-5xl pb-2 pt-4 uppercase'> Coming Soon </h2>
                             <span className='company font-crossFly italic text-1xl text-white pb-4'> 2025 </span>
                             <p className='pt-4 pb-4 text-white text-1xl font-speedPixel glow-text'>
                                 SAMAR will be back with its new edition with gamify range of 

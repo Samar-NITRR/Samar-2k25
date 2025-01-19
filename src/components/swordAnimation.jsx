@@ -36,7 +36,7 @@ const SwordAnimation = () => {
                 ref={swordRef}
                 src={swordImage}
                 alt="Sword"
-                className="absolute top-[80%] right-24 translate-y-[-50%] w-[150px]"
+                className="absolute top-[80%] right-1 translate-y-[-50%] w-[10vw]"
             />
         </div>
     );

@@ -71,7 +71,7 @@ h1 {
   .image_wrapper img {
     max-width: 100px;
     width: fit-content;
-    height: 150px;
+    /* height: 150px; */
   }
 
   .underline-glow {

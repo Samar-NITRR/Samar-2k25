@@ -14,10 +14,10 @@ function Footer() {
                                 <div className="flex items-center gap-4">
                                     <img src={SamarLogo} alt="Samar Logo" className="w-20 md:w-36" />
                                     <div>
-                                        <h2 className="text-2xl font-crossFly text-rose-500 italic mt-4 text-center md:text-left">
+                                        <h2 className="text-l md:text-xl font-crossFly text-rose-500 italic mt-4 text-center md:text-left">
                                             SAMAR
                                         </h2>
-                                        <p className="text-center md:text-left mt-2 font-speedPixel text-gray-200">
+                                        <p className="text-center text-sm md:text-l md:text-left mt-2 font-speedPixel text-gray-200">
                                             The Annual Sports Festival of NIT Raipur, Samar, is a four-day mega event held in winter. It attracts over l2,000 students from more than 35 colleges and schools, providing a platform to showcase their talent in sports and games.
                                         </p>
                                     </div>
@@ -26,10 +26,10 @@ function Footer() {
                                 <div className="flex items-center gap-4">
                                     <img src={ShauryaLogo} alt="Shaurya Logo" className="w-20 md:w-36" />
                                     <div>
-                                        <h2 className="text-2xl font-crossFly text-rose-500 italic mt-4 text-center md:text-left">
+                                        <h2 className="text-l md:text-xl font-crossFly text-rose-500 italic mt-4 text-center md:text-left">
                                             SHAURYA
                                         </h2>
-                                        <p className="text-center md:text-left mt-2 font-speedPixel text-gray-200">
+                                        <p className="text-center text-sm md:text-l md:text-left mt-2 font-speedPixel text-gray-200">
                                             Shaurya oversees all sports activities at NIT Raipur, including Samar, inter-branch tournaments, and national-level events such as the Inter-NIT Sports meet.
                                         </p>
                                     </div>
