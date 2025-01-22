@@ -37,7 +37,7 @@ function LandingSection() {
 
           <div className="text-white w-[700px] h-[90%] md:h-[100%] flex flex-col justify-between items-center pt-32">
             <div className='flex flex-col justify-center items-center'>
-              <div className="flex flex-row justify-center h-[5vmax] md:h-[4vmax] lg:h-[3vmax] items-center mb-1">
+              <div className="flex flex-row justify-center h-[5vmax] md:h-[4vmax] lg:h-[3vmax] xl:h-[4vmax] items-center mb-1">
                 <img src={SamarLogo} alt="Samar Logo" className="h-full" />
                 <h1 className="font-knightWarrior text-[5vmax] md:text-[4vmax] lg:text-[3vmax] xl:text-[5vmax] glow-text drop-shadow-[3px_3px_0px_#000]">
                   2025
@@ -64,8 +64,10 @@ function LandingSection() {
               </p>
 
               <NavLink
-                to="/register"
-                className="border-2 mt-16 px-16 py-4 text-xl italic border-rose-500 text-white font-crossFly rounded-tl-3xl rounded-br-3xl hover:bg-rose-500 hover:rounded-lg hover:scale-[.97] transition-all ease-in-out backdrop-blur-lg duration-75"
+                // to="/register"
+                to="https://play.decathlon.in/event-details/Samar-2k25/c855efdc-d0a8-11ef-9061-37dee166a5dd?utm_source=sharebutton&utm_medium=decathlon_play_partner_app&utm_campaign=externalshare"
+                target='_blank'
+                className="border-2 mt-8 px-16 py-4 text-xl italic border-rose-500 text-white font-crossFly rounded-tl-3xl rounded-br-3xl hover:bg-rose-500 hover:rounded-lg hover:scale-[.97] transition-all ease-in-out backdrop-blur-lg duration-75"
                 onMouseEnter={handleHover}
                 >
                 REGISTER
