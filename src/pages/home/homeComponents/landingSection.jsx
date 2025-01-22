@@ -68,7 +68,9 @@ function LandingSection() {
             </p>
 
             <NavLink
-              to="/register"
+              to="https://play.decathlon.in/event-details/Samar-2k25/c855efdc-d0a8-11ef-9061-37dee166a5dd?utm_source=sharebutton&utm_medium=decathlon_play_partner_app&utm_campaign=externalshare"
+              // to="/register"
+              target='_blank'
               className="border-2 px-16 py-4 text-xl italic border-rose-500 text-white font-crossFly rounded-tl-3xl rounded-br-3xl hover:bg-rose-500 hover:rounded-lg hover:scale-[.97] transition-all ease-in-out backdrop-blur-lg duration-75"
               onMouseEnter={handleHover}
             >
