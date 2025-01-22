@@ -11,7 +11,6 @@ const SwordAnimation = () => {
     useEffect(() => {
         const sword = swordRef.current;
 
-        // GSAP Animation for sword
         gsap.to(sword, {
             x: '-100vw', // Move sword from right to left
             y: '+=150', // Wavy effect along the y-axis
@@ -36,7 +35,7 @@ const SwordAnimation = () => {
                 ref={swordRef}
                 src={swordImage}
                 alt="Sword"
-                className="absolute top-[80%] right-1 translate-y-[-50%] w-[10vw]"
+                className="absolute top-[70%] right-1 translate-y-[-50%] w-[120px]"
             />
         </div>
     );

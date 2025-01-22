@@ -1,7 +1,7 @@
 import React from 'react';
 import bgImage from '../../assets/illustration/teamBg.png';
 import coBox from '../../assets/illustration/co_box.png';
-import teamCard from '../../assets/illustration/teamCard.png';
+import teamCard from '../../assets/illustration/teamCard2.png';
 import ocCard from '../../assets/illustration/ocCard.png';
 import teamData from './teamData.json';
 import coordinatorData from './coordinator.json';
@@ -11,6 +11,7 @@ import './team.css';
 function Team() {
   return (
     <div
+      id='team'
       className="w-full min-h-screen bg-cover bg-fixed bg-center text-white pt-[80px]"
       style={{
         backgroundImage: `url(${bgImage})`,
@@ -19,8 +20,8 @@ function Team() {
     >
       {/* Section Heading */}
       <div className="text-center font-crossFly uppercase text-4xl font-extrabold py-10">
-        <span className="text-white font-crossFly">TEAM</span>{' '}
-        <span className="text-rose-500 font-crossFly">SHAURYA</span>
+        <span className="text-white font-vermin lg:text-6xl">TEAM</span>{' '}
+        <span className="text-rose-500 font-vermin lg:text-6xl">SHAURYA</span>
       </div>
 
       {/* Render Team Sections Dynamically */}
@@ -28,7 +29,7 @@ function Team() {
         Object.keys(teamData).map((designation, index) => (
           <div key={index} className="py-10">
             {/* Designation Heading */}
-            <div className="text-center font-crossFly text-3xl font-semibold mb-10 mt-5 relative group">
+            <div className="text-center font-crossFly uppercase text-xl lg:text-3xl font-semibold mb-10 mt-5 relative group">
               {designation.split(/(?=[A-Z])/).join(' ')}
               <span className="absolute bottom-0 left-1/2 w-0 h-1 bg-rose-500 transition-all duration-300 transform -translate-x-1/2 group-hover:w-32" />
             </div>
@@ -68,19 +69,19 @@ function Team() {
           </div>
         ))
       ) : (
-        <div className="text-center text-xl font-semibold py-10">
+        <div className="text-center text-xl lg:text-3xl font-semibold py-10">
           No team data available.
         </div>
       )}
 
       {/* Coordinators Section */}
       <div className="py-10">
-        <div className="text-center font-crossFly text-3xl font-semibold mb-10 mt-5">
+        <div className="text-center font-vermin uppercase text-xl lg:text-3xl font-semibold mb-10 mt-5">
           Coordinators
         </div>
         {Object.entries(coordinatorData).map(([domain, members], idx) => (
           <div key={idx} className="py-5">
-            <h3 className="text-xl font-vermin font-bold text-center mb-5">{domain}</h3>
+            <h3 className="text-xl font-crossFly uppercase font-bold text-center mb-5">{domain}</h3>
             <ul className="flex flex-wrap justify-center gap-5">
               {members.map((member, i) => (
                 <li
@@ -107,7 +108,7 @@ function Team() {
 
       {/* Executives Section */}
       <div className="py-10">
-        <div className="text-center font-crossFly text-3xl font-semibold mb-10 mt-5">
+        <div className="text-center font-crossFly text-xl lg:text-3xl font-semibold mb-10 mt-5">
           Executives
         </div>
         {Object.entries(executiveData).map(([domain, members], idx) => (

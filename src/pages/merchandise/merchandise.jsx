@@ -91,11 +91,11 @@ function Merchandise() {
               </div>
             </div>
 
-            <div className="w-full max-w-[500px] md:w-[400px] xl:w-[500px] mt-6 ml-20 text-center md:mt-16">
+            <div className="w-full max-w-[500px] md:w-[400px] xl:w-[500px] mt-6 text-center md:mt-16">
               <p className="text-xl md:text-4xl font-semibold text-white font-vermin tracking-wider underline">
                 SAMAR 2025 MERCH
               </p>
-              <p className="cu-subtext text-lg md:text-2xl font-speedPixel text-violet-200 mt-14 text-shadow-md tracking-wider">
+              <p className="cu-subtext text-lg md:text-2xl font-speedPixel text-violet-200 mt-4 text-shadow-md tracking-wider">
                 Fuel your passion for the game!
               </p>
               <div className="cu-special-offer">
@@ -108,7 +108,7 @@ function Merchandise() {
               <div className="samar-sizes mt-2 md:mt-7 mb-4 flex justify-center">
                 <button
                   onMouseEnter={handleHover}
-                  className="mt-16 block border-2 px-8 py-2 bg-violet-600 text-white text-xs italic font-crossFly rounded-tl-xl rounded-br-xl hover:rounded-lg hover:text-white hover:scale-[.97] transition-all ease-in-out duration-75"
+                  className="mt-4 block border-2 px-8 py-2 bg-violet-600 text-white text-xs italic font-crossFly rounded-tl-xl rounded-br-xl hover:rounded-lg hover:text-white hover:scale-[.97] transition-all ease-in-out duration-75"
                   onClick={toggleModal}
                 >
                   GET THE RIGHT SIZE <br /> FOR YOU

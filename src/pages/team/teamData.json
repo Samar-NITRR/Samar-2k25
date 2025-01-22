@@ -172,15 +172,6 @@
       "linkedin": "https://linkedin.com/"
     },
     {
-      "Name": "Abhay Dubey",
-      "Branch": "Biotechnology",
-      "Domain": "Sports Coordinator",
-      "designation": "HC",
-      "Photo": "./src/assets/TeamImagesHC/AbhayDubey.jpg",
-      "instagram": "https://instagram.com/",
-      "linkedin": "https://linkedin.com/"
-    },
-    {
       "Name": "Som prakash rathore",
       "Branch": "Mining",
       "Domain": "Sports coordinator",
@@ -197,15 +188,6 @@
       "Domain": "Design",
       "designation": "HC",
       "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453611/SriyanshuJaiswal_wbr3bq.jpg",
-      "instagram": "https://instagram.com/",
-      "linkedin": "https://linkedin.com/"
-    },
-    {
-      "Name": "Shivanshu singh",
-      "Branch": "Metallurgical and materials Engineering",
-      "Domain": "Design",
-      "designation": "HC",
-      "Photo": "./src/assets/TeamImagesHC/ShivanshuSingh.jpg",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     }

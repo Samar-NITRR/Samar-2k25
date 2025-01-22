@@ -2,11 +2,13 @@ import { useState, useRef } from 'react';
 import '../../../../globalStyles.css';
 import HoverAudio from '../../../assets/audio/buttonHoverGTA.mp3';
 import samarLogo from '/favicon.png';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate, useLocation } from 'react-router-dom';
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const hoverAudioRef = useRef(new Audio(HoverAudio));
+    const navigate = useNavigate();
+    const location = useLocation();
 
     const handleHover = () => {
         hoverAudioRef.current.play();
@@ -18,11 +20,26 @@ function Header() {
 
     const handleScrollToTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
-    };    
+    };
 
-    const handleScroll = () => {
-        const element = document.getElementById("about");
-        element.scrollIntoView({ behavior: 'smooth' });
+    const handleScroll = (event) => {
+        event.preventDefault(); // Prevent default link behavior
+
+        if (location.pathname === '/') {
+            // Already on the Home page
+            const aboutSection = document.getElementById("about");
+            if (aboutSection) {
+                aboutSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        } else {
+            navigate('/');
+            setTimeout(() => {
+                const aboutSection = document.getElementById("about");
+                if (aboutSection) {
+                    aboutSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 100); // Delay to allow Home to render
+        }
     };
 
     return (
@@ -75,6 +92,18 @@ function Header() {
                     onMouseEnter={handleHover}
                 >
                     MERCHANDISE
+                </NavLink>
+
+                <NavLink
+                    to="/team"
+                    className={({ isActive }) =>
+                        `px-8 py-3 hover:text-rose-400 font-crossFly text-xs tracking-widest ${
+                            isActive ? 'text-rose-400' : 'text-white'
+                        }`
+                    }
+                    onMouseEnter={handleHover}
+                >
+                    TEAM
                 </NavLink>
 
                 <a 
