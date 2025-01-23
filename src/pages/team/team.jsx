@@ -8,6 +8,8 @@ import coordinatorData from './coordinator.json';
 import executiveData from './executive.json';
 import './team.css';
 
+//https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453608/RitikPadhi_ecb50j.jpg
+
 function Team() {
   return (
     <>
