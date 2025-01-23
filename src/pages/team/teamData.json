@@ -23,9 +23,9 @@
       "linkedin": "https://linkedin.com/"
     },
     {
-      "Name": "RITIK ROSHAN PADHI",
+      "Name": "RITIKA ROSHAN PADU",
       "Branch": "",
-      "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453608/RitikPadhi_ecb50j.jpg",
+      "Photo": "",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     },
@@ -299,15 +299,6 @@
       "linkedin": "https://linkedin.com/"
     },
     {
-      "Name": "Jay Yadav",
-      "Branch": "Mechanical",
-      "Domain": "Event Management",
-      "designation": "HC",
-      "Photo": "./src/assets/TeamImagesHC/JayYadav.png",
-      "instagram": "https://instagram.com/",
-      "linkedin": "https://linkedin.com/"
-    },
-    {
       "Name": "Vikash Pandey",
       "Branch": "Mining engineering",
       "Domain": "EM",
@@ -322,15 +313,6 @@
       "Domain": "EM",
       "designation": "HC",
       "Photo": "https://res.cloudinary.com/dujmw5q9s/image/upload/v1735453639/ShashankPillai_xgjz6j.jpg",
-      "instagram": "https://instagram.com/",
-      "linkedin": "https://linkedin.com/"
-    },
-    {
-      "Name": "Manali Lokhande",
-      "Branch": "Mechanical Engineering",
-      "Domain": "EM",
-      "designation": "HC",
-      "Photo": "./src/assets/TeamImagesHC/ManaliLokhande.jpg",
       "instagram": "https://instagram.com/",
       "linkedin": "https://linkedin.com/"
     },

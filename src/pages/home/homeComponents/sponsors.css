@@ -17,21 +17,6 @@ h1 {
  margin-bottom: 30px;
 }
 
-
-.image_wrapper {
-  margin: 0px 40px;
-}
-
-.image_wrapper img {
-  width: 60%;
-  height: 60%;
-  transition: transform 0.3s ease-in-out;
-}
-
-.image_wrapper img:hover {
-  transform: scale(1.05);
-}
-
 .marquee-container {
   margin: 0 auto;
   margin-top: 10px;
