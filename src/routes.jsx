@@ -1,6 +1,7 @@
 import "../globalStyles.css";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 import Header from "./components/navigation/header/header";
 import Home from "./pages/home/home";
@@ -16,6 +17,7 @@ import Footer from "./components/navigation/footer/footer";
 import Intro from "./pages/home/intro.jsx";
 
 import Loader from "./components/loader/loader.jsx";
+import { Analytics } from "@vercel/analytics/react";
 
 function AppContent() {
     const location = useLocation();
@@ -143,6 +145,7 @@ function AppContent() {
                                 <Route path="/register/:sport" element={<Registration2 />} />
                                 <Route path="*" element={<SUC />} />
                             </Routes>
+                            <Analytics />
                             {showHomepage === 3 && shouldShowHeaderFooter && <Footer />}
                         </>
                     )}
