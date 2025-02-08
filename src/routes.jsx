@@ -17,7 +17,6 @@ import Footer from "./components/navigation/footer/footer";
 import Intro from "./pages/home/intro.jsx";
 
 import Loader from "./components/loader/loader.jsx";
-import { Analytics } from "@vercel/analytics/react";
 
 function AppContent() {
     const location = useLocation();
